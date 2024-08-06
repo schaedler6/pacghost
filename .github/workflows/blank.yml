@@ -1,7 +1,7 @@
 
 # GitHub Action for generating a contribution graph with a snake eating your contributions.
 
-# ![snake gif](https://github.com/your-user-name/your-user-name/blob/output/github-contribution-grid-snake.gif)
+# ![snake gif](https://github.com/schaedler6/schaedler6/blob/output/github-contribution-grid-snake.gif)
 
 name: Generate Snake
 
@@ -24,7 +24,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -35,7 +35,7 @@ jobs:
         uses: Platane/snk@v3
         id: snake-gif
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: schaedler6
           outputs: |     
             dist/github-contribution-grid-snake.gif
             dist/github-contribution-grid-snake.svg
